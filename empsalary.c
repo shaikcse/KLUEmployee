@@ -1,15 +1,12 @@
 /*C program to read and print employee's record using structure*/
- 
-#include <stdio.h>
- 
-/*structure declaration*/
+ #include <stdio.h>
+ /*structure declaration*/
 struct employee{
     char    name[30];
     int     empId;
     float   salary;
 };
- 
-int main()
+ int main()
 {
     /*declare structure variable*/
     struct employee emp;
@@ -26,4 +23,4 @@ int main()
     printf("Id: %d"     ,emp.empId);
     printf("Salary: %f\n",emp.salary);
     return 0;
-}
+ }

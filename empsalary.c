@@ -1,8 +1,29 @@
-#include<stdio.h>
-#include<dos.h>
-struct employee
+/*C program to read and print employee's record using structure*/
+ 
+#include <stdio.h>
+ 
+/*structure declaration*/
+struct employee{
+    char    name[30];
+    int     empId;
+    float   salary;
+};
+ 
+int main()
 {
-  int NO;
-    char NAME[10];
-    int DESIGN_CODE;
-    int DAYS_WORKED;
+    /*declare structure variable*/
+    struct employee emp;
+     
+    /*read employee details*/
+    printf("\nEnter details :\n");
+    printf("Name ?:");          gets(emp.name);
+    printf("ID ?:");            scanf("%d",&emp.empId);
+    printf("Salary ?:");        scanf("%f",&emp.salary);
+     
+    /*print employee details*/
+    printf("\nEntered detail is:");
+    printf("Name: %s"   ,emp.name);
+    printf("Id: %d"     ,emp.empId);
+    printf("Salary: %f\n",emp.salary);
+    return 0;
+}
